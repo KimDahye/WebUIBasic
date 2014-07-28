@@ -2,6 +2,9 @@
 <html lang="ko">
 	<head>
 		<meta charset = "utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link href="/images/apps.png">
+
 	</head>
 
 
@@ -11,12 +14,14 @@
 		<header id="gb">
 
 			<div id="logo">
-				<a href="https://play.google.com/store"><span><!-- 원래는 이미지로 넣어야 함-->Google play</span></a>
+				<a href="https://play.google.com/store"></a>
 			</div>
 
 			<div id="search">
-				<input type="text" placeholder="검색">
-				<button onclick="">
+				<div id="search_bar_container">
+					<input type="text" placeholder="검색">
+				</div>
+				<button id="search_btn" onclick="">
 					<span id="srch_icon"></span>
 				</button>
 			</div>
@@ -27,7 +32,7 @@
 				</div>
 				<div id="floating">
 					<div id="apps">
-						<a href-""><!-- 원래는 아이콘-->앱</a>
+						<a href="http://www.google.co.kr/intl/ko/about/products/">apps</a>
 					</div>
 					<div id="noti">
 						<a href=""><!--원래는 아이콘-->알림</a>
@@ -39,7 +44,7 @@
 							</div>
 						</a>
 					</div>
-					<div id="pofile">
+					<div id="profile">
 						<a href=""><!--원래는 프로필사진-->프로필</a>
 					</div>
 				</div>
@@ -47,32 +52,32 @@
 		</header>
 
 		<!-- wrapper with footer -->
-		<div id="wf">
+		<div id="wrapper">
 			<!-- fixed menu -->
 			<div id="fixedmenu">
 				<ul>
 					<li id="book">
-						<a href="">
-							<span><!-- 아이콘--></span>
-							<span>도서</span>
+						<a id="book_title" href="">
+							<span id="bookicon"><!-- 아이콘--></span>
+							<span class="fixed_title">도서</span>
 						</a>
 
 						<div id="bookmenu">
 							<div id="navi_hover_arrow">
-								<span id"arrow_img"></span>
+								<span id="arrow_img"></span>
 							</div>
 
 							<ul>
-								<li><a href="">내 책</a></li>
-								<li><a href="">쇼핑하기</a></li>
+								<li class="menu_list"><a href="">내 책</a></li>
+								<li class="menu_list"><a href="">쇼핑하기</a></li>
 							</ul>
 						</div>
 					</li>
-					<li id "genre">
+					<li id="genre">
 						<div id="genre_container">
 							<button>
-								<span "genre_text">장르</span>
-								<span "genre_arrowicon"></span>
+								<span id="genre_text">장르</span>
+								<span id="genre_arrowicon"></span>
 							</button>
 						</div>
 					</li>

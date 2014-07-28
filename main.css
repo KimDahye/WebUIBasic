@@ -6,6 +6,7 @@ ul{
 
 body{
 	width:100%;
+	min-height: 1000px;
 	margin: auto;
 	background:#e5e5e5;
 	color: #333;
@@ -166,7 +167,7 @@ header{
 
 #wrapper{
 	position: relative;
-
+	width:100%;
 }
 
 #fixedmenu{
@@ -213,6 +214,7 @@ header{
 	height:200px;
 	background-color:rgba(245, 245, 245, 0.952941); 
 	box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+	z-index: 10;
 
 }
 
@@ -237,6 +239,7 @@ header{
 
 #bookmenu .menu_list a:hover{
 	background-color:#e5e5e5;
+	cursor:hand;
 }
 
 #bookmenu li.menu_list:nth-child(1){
@@ -438,11 +441,165 @@ header{
 }
 
 #container {
-	position: absolute;
+	position: relative;
 	top:48px;
-	left: 250px;
-	width:100%;
+	width: 100%;
 	display:inline-block;
 }
+
+.section{
+	position: relative;
+	margin-top:50px;
+	padding-top:50px;
+	margin-bottom:15px;
+	margin-left:248px;
+	margin-right:50px;
+}
+
+div.section:nth-child(1){
+	padding-top:0px;
+	margin-top:20px;
+} 
+	
+
+.section_header{
+	position: relative;
+	font-weight: 100;
+	display:block;
+	height: 45px;
+	width: 100%;
+	padding-left:13px;
+	line-height:45px;
+	vertical-align: middle;
+
+}
+
+.section_title{
+	position:relative;
+	font-size: 28px;
+	display:inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+
+a.more_button{
+	position:absolute;
+	top:2px;
+	right:100px;
+	margin-top: 5px;
+	margin-right: 4px;
+	display:inline-block;
+
+	background-color: #1aa1e1;
+	padding:5px 13px 5px 13px;
+	border-radius:2px;
+	font-family: "Roboto",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	width: 50px;
+	height:20px;
+	text-decoration: none;
+	color:#fff;
+
+	line-height: 20px;
+	vertical-align:middle;
+}
+
+.books_container{
+	position: relative;
+	display:block;
+	width: 100%;
+	padding-left:0px;
+}
+
+.books_container ul{
+	padding-left: 14px;
+}
+
+.books_container li{
+	width: 170px;
+	margin: 5px 2px 5px 2px;
+	display:inline-block;
+
+}
+
+
+.bookcover{
+	position: relative;
+	display: inline-block;
+	vertical-align:middle;
+	text-align: center;
+	width: 157px;
+	height: 220px;
+	background:rgba(255,255,255,0.7);
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	
+}
+
+.bookcover img{
+	max-height: 95%;
+	max-width: 95%;
+}
+
+.details{
+	position:absolute;
+	display:block;
+	top: 220px;
+	width:157px;
+	height:75px;
+	background:#fff;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.details a{
+	text-decoration: none!important;
+}
+
+.booktitle{
+	position: relative;
+	color: #333;
+	display: block;
+	font-size: 16px;
+	line-height: 18px;
+	max-height: 36px;
+	min-height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+	padding:6px 6px 3px 6px;
+}
+
+.author{
+	position:relative;
+	color: #aaa;
+	display: block;
+	font-size: 13px;
+	line-height: 16px;
+	margin: 1px 0px 4px 1px;
+	padding-left:6px;
+	max-width: 132px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.price{
+	position:absolute;
+	display: inline-block;
+	right:5px;
+	margin-top:8px;
+	text-align: right;
+	color: #1aa1e1;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+
 
 

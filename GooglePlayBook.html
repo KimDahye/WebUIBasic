@@ -2,19 +2,37 @@
 <html lang="ko">
 	<head>
 		<meta charset = "utf-8">
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link href="/images/apps.png">
-
+		<link rel="stylesheet" type="text/css" href="main_new.css">
 	</head>
 
-
 	<body>
+		<header>
+			<div id="logo_container">
+				<a id="logo" href="https://play.google.com/store"></a>
+			</div>
 
-		<!--goole box-->
-		<header id="gb">
-
-			<div id="logo">
-				<a href="https://play.google.com/store"></a>
+			<div id="user"> 
+				<ul>
+					<li id="plus">
+						<a href="https://plus.google.com/u/0/?tab=8X">+Dahye</a>
+					</li>
+					<li id="apps">
+						<a href="http://www.google.co.kr/intl/ko/about/products/"><!--원래는 아이콘-->apps</a>
+					</li>
+					<li id="noti">
+						<a href=""><!--원래는 아이콘-->알림</a>
+					</li>
+					<li id="share">
+						<a href="https://plus.google.com/u/0/stream/all?hl=ko">
+							<div id="share_button">
+								<span>공유</span>
+							</div>
+						</a>
+					</li>
+					<li id="profile">
+						<a href=""><!--원래는 사진-->프로필</a>
+					</li>
+				</ul>
 			</div>
 
 			<div id="search">
@@ -26,84 +44,58 @@
 				</button>
 			</div>
 
-			<div id="user"> <!-- 이 부분은 ul로 바꿀 수도 있을 듯! -->
-				<div id="plus">
-					<a href="https://plus.google.com/u/0/?tab=8X">+Dahye</a>
-				</div>
-				<div id="floating">
-					<div id="apps">
-						<a href="http://www.google.co.kr/intl/ko/about/products/">apps</a>
-					</div>
-					<div id="noti">
-						<a href=""><!--원래는 아이콘-->알림</a>
-					</div>
-					<div id="share">
-						<a href="https://plus.google.com/u/0/stream/all?hl=ko">
-							<div id="share_button">
-								<span>공유</span>
-							</div>
-						</a>
-					</div>
-					<div id="profile">
-						<a href=""><!--원래는 프로필사진-->프로필</a>
-					</div>
-				</div>
-			</div>
 		</header>
 
-		<!-- wrapper with footer -->
 		<div id="wrapper">
-			<!-- fixed menu -->
-			<div id="fixedmenu">
+
+
+
+			<nav id="main_nav">
+				<a id="nav_title" href="">
+					<span id="bookicon"><!-- 아이콘--></span>
+					<span>도서</span>
+				</a>
+				<div id="nav_content">
+					<div id="navi_hover_arrow">
+						<span id="arrow_img"></span>
+					</div>
+					<a class="nav_content" href="">내 책</a>
+					<a class="nav_content" href="">쇼핑하기</a>
+				</div>
+			</nav>
+
+			<nav id="sub_nav">
 				<ul>
-					<li id="book">
-						<a id="book_title" href="">
-							<span id="bookicon"><!-- 아이콘--></span>
-							<span class="fixed_title">도서</span>
-						</a>
-
-						<div id="bookmenu">
-							<div id="navi_hover_arrow">
-								<span id="arrow_img"></span>
-							</div>
-
-							<ul>
-								<li class="menu_list"><a href="">내 책</a></li>
-								<li class="menu_list"><a href="">쇼핑하기</a></li>
-							</ul>
-						</div>
-					</li>
 					<li id="genre">
 						<div id="genre_container">
-							<button>
-								<span id="genre_text">장르</span>
-								<span id="genre_arrowicon"></span>
-							</button>
+							<span id="genre_text">장르</span>
+							<span id="genre_arrowicon"></span>
 						</div>
 					</li>
 					<li id="separating_bar">
-						<span id="separating_bar_icon"><span>
+							<span><!-- 아이콘--><span>
 					</li>
 					<li id="home">
-						<span id="home_text">홈</span>
+						<span>홈</span>
 					</li>
 					<li id="ranking">
-						<span id "ranking_text">인기 차트</span>
+						<span>인기 차트</span>
 					</li>
 					<li id="newbooks">
-						<span id="newbooks_text">신간</span>
-					</li>
-					<li id="fixed_buttons">
-						<button>
-							<span id="help_btn_icon"></span>
-						</button>
-						<button>
-							<sapn id="setting_btn_icon"></span>
-						</button>
+						<span>신간</span>
 					</li>
 				</ul>
-			</div>
 
+				<button>
+					<span id="help_btn_icon"></span>
+				</button>
+				<button>
+					<sapn id="setting_btn_icon"></span>
+				</button>
+			</nav>
+
+
+		
 			<!--contents -->
 			<div id="container">
 				<div class="section">

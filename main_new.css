@@ -13,6 +13,10 @@ a{
 	color:#000;
 }
 
+a:hover{
+	cursor: pointer;
+}
+
 body{
 	margin:0px;
 	background: #e5e5e5;
@@ -47,10 +51,48 @@ header{
 }
 
 #search {
+	position:relative;
 	min-width:200px;
 	height: 60px;
 	margin-left: 243px;
-	margin-right: 330px;
+	margin-right: 340px;
+}
+
+#search_bar_container{
+	position: absolute;
+	top:15px;
+	background: white;
+	border: 1px solid rgba(0, 0, 0, 0.298039);
+	width: 95%;
+	height: 28px;
+}
+
+#search input{
+	position: absolute;
+	left: 10px;
+	background: transparent;
+	border: none;
+	height: 20px;
+	width: 90%;
+	margin-top: 4px;
+	padding: 0;
+	font-size: 17px;
+	outline: none;
+}
+
+#search_btn{
+	position: absolute;
+	right: 0px;
+	top:15px;
+	border-bottom-left-radius:0;
+	border-bottom-right-radius:2px;
+	border-top-left-radius:0;
+	border-top-right-radius:2px;
+	border: 1px solid transparent;
+	box-shadow: none;
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+	width: 60px;
+	height:30px;
 }
 
 #user{
@@ -59,20 +101,252 @@ header{
 	height:60px;
 	padding-left:30px;
 	padding-right: 30px;
+	text-align: right;
 }
 
-#main_nav{
-	float:left;
-	width: 200px;
-	height: 240px;
+#plus, #apps, #noti, #share, #profile{
+	line-height: 60px;
+	vertical-align: middle;
+	font-size: 13px;
+	padding-left:15px;
+}
+
+#apps, #noti{
+	width:30px;
+}
+
+#apps a, #noti a, #share_button, #share a{
+	display:block;
+	height:30px;
+}
+
+#apps a, #noti a{
+	background-image: url(https://ssl.gstatic.com/gb/images/v1_2e543709.png);
+	opacity: 0.5;
+}
+
+#plus a:hover{
+	text-decoration: underline; 
+}
+
+#apps a{
+	background-position: -51px -452px;
+	background-size: 112px 1828px;
+}
+
+#noti a{
+	background-position: 0px -69px;
+	background-size: 112px 1828px;
+}
+
+#apps a:hover, #noti a:hover{
+	opacity: 1;
+}
+
+#share a{
+	width:60px;
+	text-align: center;
+}
+
+#share_button{
+	background-color: rgba(0, 0, 0, 0.0392157);
+	width:60px;
+	border-radius: 2px;
+	vertical-align: middle;
+	line-height: 30px;
+}
+
+#share_button:hover{
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+#profile{
+	width:32px;
+	height:32px;
+	margin:-1px;
+	margin-left:8px;
+	padding-left:0px;
+	background-image: url(https://lh6.googleusercontent.com/-zP3vE4lIdVc/AAAAAAAAAAI/AAAAAAAAAAA/PIEPIljNA_U/s32-c/photo.jpg);
+	background-size: 32px 32px;
+	border-radius: 50%;
+}
+
+#left_nav{
+	position:absolute;
+	left:0px;
 	background-color: #f1f1f1;
-	z-index:10;
+	width:200px;
+	height:196px;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+	z-index: 50!important;
 }
 
-#sub_nav{
-	width:100%;
+#left_nav>a, #top_nav, #nav_title, #top_nav>ul{
 	height: 48px;
+}
+
+#nav_title, #top_nav > ul{
+	float:left;
+}
+
+#nav_title{
+	position:relative;
+	background-color: rgb(26, 161, 225);
+	width:200px;
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+}
+
+#main-title{
+	position:absolute;
+	top: 14px;
+}
+
+#bookicon{
+	display:inline-block;
+	width:24px; 
+	height:24px;
+	margin-top:12px;
+	margin-left:28px;
+	margin-right:20px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA40lEQVQoz+2RTRGDMBhEIyESKgEJSEACEioBB5GABCQgIRKQgITXQzc0QNIwbbl02Jlw+H72JYsBjDHGAB0w64zAADSmIKDW7Bjtd+o9P8AEtMBNg7GmsLAxbtSLNcjjLtACCPK6UaOBWCNgZd5verN2ankE7QBBTjcZEpAuc2uX8MkCQjS1nusTfa9Y60RUhwDxa2zmB7vC7iEAMivWLsAFuAD/DnAnANwC0HADzD8AzECr/gugQgX4LwAeqCK/NUBFC/QfAHrAbrz2gKjZhsgKgCWShEceEEf2BrCKJAs48zwAsmsx4ZbVwpEAAAAASUVORK5CYII=);
+}
+
+#nav_content a{
+	display:block;
+	padding-left: 23px;
+	font-size: 18px;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+}
+
+#left_nav_list, #nav_content>a{
+	width: 176px;
+	margin-left:24px;
+}
+
+#left_nav_list{
+	padding-top:6px;
+}
+
+#nav_content a:hover{
+	background-color:#e5e5e5;
+}
+
+#navi_hover_arrow{
 	background-color: #fff;
+	position: absolute;
+	width: 24px;
+	height:192px;
+}
+
+#top_nav{
+	position:relative;
+	left:0px;
+	width:100%;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+	overflow: auto;
+}
+
+#genre, #home, #ranking, #newbooks, #genre_container{
+	color: rgb(115, 115, 115);
+	text-align: center;
+	height:48px;
+	line-height: 48px;
+	vertical-align: middle;
+	font-size: 14px;
+	padding-left: 14px;
+	padding-right:14px;
+	margin-right:-2px;
+	margin-left:-2px;
+}
+
+#genre_container:hover, #home:hover, #ranking:hover, #newbooks:hover{
+	background-color: #f1f1f1;
+	cursor: pointer;
+}
+
+#separating_bar{
+	display: inline-block;
+	vertical-align: top;
+	width:1px;
+	height: 30.719px;
+	background-color: rgb(214, 214, 214);
+	margin-top:9px;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+
+#genre{
+	margin-left: 22px;
+	width:80px;
+	padding-right:0px;
+}
+
+#genre_arrowicon{
+	display: inline-block;
+	vertical-align: top;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAjUlEQVQoz2P4//8/A7mYYYhrzs3N5SsqKsoE0jLYFGZmZgoWFhZmAYEEhmagxsri4uL/QPwYaIAyssbs7GxhoPwFkDyQnoOhGWiqLlDyA7oBaBp/AdW5YfVzfn6+ObIBeXl5xsgagXQA3gBDM+AnLo04QxtqwHeoAX+xacQbVUC/RQA1vQQF5HBNYeRgAKO6bfkUgtZHAAAAAElFTkSuQmCC);
+	width:15px;
+	height:15px;
+	margin-top:17px;
+	margin-left:3px;
+}
+
+#home{
+	height:45px;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: rgb(26, 161, 225);
+}
+
+#top_nav>button{
+	position:absolute;
+	top:10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 0px;
+	border-color: rgba(0,0,0,0.15);
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgba(0,0,0,0);
+	border-radius: 2px;
+	height:30px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#setting_btn:hover, #help_btn:hover{
+	box-shadow: rgba(0, 0, 0, 0.27) 0px 1px 0px 0px;
+	border-color: rgba(0,0,0,0.27);
+	cursor: pointer;
+}
+
+#help_btn{
+	right:105px;
+	width:38px;
+}
+
+#setting_btn{
+	right:30px;
+	width:55px;
+}
+#setting_btn_icon, #help_btn_icon{
+	display: inline-block;
+	width:21px;
+	height:21px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#help_btn_icon{
+	margin-top: 1px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAwUlEQVQ4y9WU6w3DIAyEGcEjZIQOwBAdgdEyikfoAAyRDVwTgZQQPyDKj/akkyIEn2zOIRBReNrh/6GsxEY2dS5raQrKWtgfAda77FlcKOvF3gaAzZsE7qGnCgGAEJGayndZ6ytWofUOTweOwCNYqDhp0EsoTTHG3U1SeBrUvD8HShdoTVwFDrQvQmEEqgQlQ732rbY9KE7M53BQSTuUc95tQNWRgptQc/jfN9q2f1PWOgn0H5Qa1Forhkefvp99+b/H6ZOyGDEoawAAAABJRU5ErkJggg==); 
+}
+
+#setting_btn_icon{	
+	margin-top: 2px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA3klEQVQ4y2NgGE4gEYj/I+FEahg6D83QuaQawATEqkDMCOVbA/FdNEPvALEVVJ4Rqp4Jn6HZUI3XgHgNEP9DMxCG/0Hlr0H52bgMFALiN3gMeYLHkjdQ/RigDovi30DcgaRBGIg7gfgPFrV12AzVhYYXssI2HL7qwBLOuriCgA+IPyF5WQCHOl4g/gFV9xGqDy/4BVX8jIC6B1B1PwkZSHWX0iRM6/HEPi+SC3HFfi2udPoWRzr8As1ZX/CkU0FcQZBDYo66DuVn0T3vYwNz0AydTY2iLxXN0NThU1UAAJ7AjlNiNxjgAAAAAElFTkSuQmCC);
 }
 
 #container{
@@ -90,8 +364,9 @@ header{
 
 .section_header{
 	position:relative;
-	margin-left:248px;
-	margin-right:50px;
+	margin-left:255px;
+	margin-right:85px;
+	margin-bottom:5px;
 	font-weight: 100;
 	font-size:28px;
 	overflow: hidden;
@@ -104,7 +379,7 @@ header{
 
 a.more_button{
 	position:absolute;
-	right: 15px;
+	left: 755px;
 	bottom: 5px;
 	margin-top: 5px;
 	display:inline-block;
@@ -122,10 +397,13 @@ a.more_button{
 	line-height: 20px;
 	vertical-align:middle;
 }
-
+a.more_button:hover{
+	background-color: rgb(27, 181, 255);
+	box-shadow: rgba(0, 0, 0, 0.270588) 0px -2px 0px 0px inset;
+}
 
 .books_container{
-	margin-left:248px;
+	margin-left:255px;
 	margin-right: 50px;
 }
 
@@ -179,6 +457,7 @@ a.more_button{
 	font-size: 16px;
 	line-height: 17px;
 	max-height: 17px;
+	max-width: 140px;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -186,9 +465,30 @@ a.more_button{
 .paragraph_end{
 	position:absolute;
 	top:5px;
-	right:0px;
+	right:10px;
 	display:block;
-	width:45px;
+	width:60px;
 	height: 17px;
 	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.author, .price{
+	font-size: 13px;
+	max-width: 132px;
+	max-height:16px;
+	overflow: hidden;
+	margin: 1px;
+}
+
+.author{
+	display: block;
+	color: rgb(170, 170, 170);
+}
+
+.price{
+	position: absolute;
+	text-align: right;
+	right:10px;
+	bottom:2px;
+	color: rgb(26, 161, 225);
 }

@@ -17,20 +17,18 @@
 						<a href="https://plus.google.com/u/0/?tab=8X">+Dahye</a>
 					</li>
 					<li id="apps">
-						<a href="http://www.google.co.kr/intl/ko/about/products/"><!--원래는 아이콘-->apps</a>
+						<a href="http://www.google.co.kr/intl/ko/about/products/"></a>
 					</li>
 					<li id="noti">
-						<a href=""><!--원래는 아이콘-->알림</a>
+						<a href=""></a>
 					</li>
 					<li id="share">
 						<a href="https://plus.google.com/u/0/stream/all?hl=ko">
-							<div id="share_button">
-								<span>공유</span>
-							</div>
+							<div id="share_button">공유</div>
 						</a>
 					</li>
 					<li id="profile">
-						<a href=""><!--원래는 사진-->프로필</a>
+						<a href=""></a>
 					</li>
 				</ul>
 			</div>
@@ -43,25 +41,14 @@
 					<span id="srch_icon"></span>
 				</button>
 			</div>
-
 		</header>
 
-		
-		<nav id="main_nav">
+		<nav id="top_nav">
 			<a id="nav_title" href="">
 				<span id="bookicon"><!-- 아이콘--></span>
-				<span>도서</span>
+				<span id="main-title">도서</span>
 			</a>
-			<div id="nav_content">
-				<div id="navi_hover_arrow">
-					<span id="arrow_img"></span>
-				</div>
-				<a class="nav_content" href="">내 책</a>
-				<a class="nav_content" href="">쇼핑하기</a>
-			</div>
-		</nav>
-
-		<nav id="sub_nav">
+			
 			<ul>
 				<li id="genre">
 					<div id="genre_container">
@@ -70,7 +57,6 @@
 					</div>
 				</li>
 				<li id="separating_bar">
-						<span><!-- 아이콘--><span>
 				</li>
 				<li id="home">
 					<span>홈</span>
@@ -82,17 +68,26 @@
 					<span>신간</span>
 				</li>
 			</ul>
-
-			<button>
+			<button id="help_btn">
 				<span id="help_btn_icon"></span>
 			</button>
-			<button>
+			<button id="setting_btn">
 				<sapn id="setting_btn_icon"></span>
 			</button>
 		</nav>
-	
-		
-		<!--contents -->
+
+		<nav id="left_nav">
+			<div id="nav_content">
+				<div id="navi_hover_arrow">
+					<span id="arrow_img"></span>
+				</div>
+				<div id="left_nav_list">
+					<a class="nav_content" href="">내 책</a>
+					<a class="nav_content" href="">쇼핑하기</a>
+				</div>
+			</div>
+		</nav>
+
 		<div id="container">
 			<div class="section">
 				
@@ -129,9 +124,10 @@
 							
 
 							<div class="details">
-								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
-								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
-								<a class="price" href="">₩980</a>
+								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">잡담이 능력이다</a>
+								<span class="paragraph_end"></span>
+								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">사이토 다카시</a>
+								<a class="price" href="">₩9,100</a>
 							</div>
 						</li>
 
@@ -145,38 +141,41 @@
 
 							<div class="details">
 								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">생각 버리기 연습</a>
-								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">일본인</a>
-								<a class="price" href="">₩980</a>
+								<span class="paragraph_end"></span>
+								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">코이케류노스케</a>
+								<a class="price" href="">₩9,600</a>
 							</div>
 						</li>
 
 						<li>
 							<a class="bookcover" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">
 								<div class="cover_container">
-									<img src="https://encrypted.google.com/books/images/frontcover/yA2lAgAAQBAJ?fife=w170-rw">
+									<img src="https://encrypted.google.com/books/images/frontcover/m_IxAgAAQBAJ?fife=w170-rw">
 								</div>
 							</a>
 							
 
 							<div class="details">
-								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
-								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
-								<a class="price" href="">₩980</a>
+								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">다이어트 비밀 43가지</a>
+								<span class="paragraph_end"></span>
+								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">이준숙</a>
+								<a class="price" href="">₩5,500</a>
 							</div>
 						</li>
 
 						<li>
 							<a class="bookcover" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">
 								<div class="cover_container">
-									<img src="https://encrypted.google.com/books/images/frontcover/yA2lAgAAQBAJ?fife=w170-rw">
+									<img src="https://encrypted.google.com/books/images/frontcover/w5ovsKXL0IQC?fife=w170-rw">
 								</div>
 							</a>
 							
 
 							<div class="details">
-								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
-								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
-								<a class="price" href="">₩980</a>
+								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">젋은 베르테르의 슬픔</a>
+								<span class="paragraph_end"></span>
+								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">요한 볼프강 폰 괴테</a>
+								<a class="price" href="">₩1,500</a>
 							</div>
 						</li>
 
@@ -217,6 +216,7 @@
 
 							<div class="details">
 								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
+								<span class="paragraph_end"></span>
 								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
 								<a class="price" href="">₩980</a>
 							</div>
@@ -232,6 +232,7 @@
 
 							<div class="details">
 								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%BD%94%EC%9D%B4%EC%BC%80%EB%A5%98%EB%85%B8%EC%8A%A4%EC%BC%80_%EC%83%9D%EA%B0%81_%EB%B2%84%EB%A6%AC%EA%B8%B0%EC%97%B0%EC%8A%B5?id=gLCQAwAAQBAJ">생각 버리기 연습</a>
+								<span class="paragraph_end"></span>
 								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">코이케류</a>
 								<a class="price" href="">₩980</a>
 							</div>
@@ -247,6 +248,7 @@
 
 							<div class="details">
 								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
+								<span class="paragraph_end"></span>
 								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
 								<a class="price" href="">₩980</a>
 							</div>
@@ -262,6 +264,7 @@
 
 							<div class="details">
 								<a class="booktitle" href="https://play.google.com/store/books/details/%EC%9E%A5%ED%95%B4%EC%A0%95_%EC%96%B4%EC%84%9C%EC%99%80_%EC%97%B0%EC%95%A0%EB%8A%94_%EC%B2%98%EC%9D%8C%EC%9D%B4%EC%A7%80?id=VvCTIS-i28IC">어서와 연애는 처음이지?</a>
+								<span class="paragraph_end"></span>
 								<a class="author" href="https://play.google.com/store/books/author?id=%EC%9E%A5%ED%95%B4%EC%A0%95">장해정</a>
 								<a class="price" href="">₩980</a>
 							</div>

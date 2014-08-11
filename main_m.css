@@ -1,0 +1,245 @@
+html, body, div, ul, li, h1{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+button{
+	background-color: #fff;
+	border:none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	display:inline-block;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+
+}
+
+body{
+	overflow:auto;
+	color: #333;
+	font-family: "Roboto",Arial,sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.4;
+	background: #e5e5e5;
+}
+
+header{
+	position:relative;
+	width:100%;
+	height: 48px;
+	background: #fff;
+	border-bottom: 1px solid #aaa;
+	text-align: center;
+}
+
+.header_button{
+	display: inline-block;
+	height: 46px;
+	width: 46px;
+	position: absolute;
+	top: 0;
+}
+
+.header_icon{
+	background-size: contain;
+	height: 24px;
+	width: 24px;	
+	position: absolute;
+	top: 11px;
+	left: 11px;
+	background-repeat: no-repeat;
+}
+
+#menu{
+	left:0;
+}
+
+#search{
+	right:0;
+}
+
+#menu_icon{
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAV0lEQVRIx+3VQQ0AIAwEwWo5Jfg3VUwQQsM0WQHz6VV31+QKAAAAAAAAAOAwIMlK0i8FAADwE+DFAwC4CfCFAAAALLEhA7DE3igAwL+ASQEAAAAAAIxuAySZPrhcy+LMAAAAAElFTkSuQmCC);
+}
+
+#search_icon{
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABSElEQVRYw+3Z0Q2DIBAGYEdwhOafwBEcwREYwRG6gSN0BEfoCIzgCIxAX3hoiCeCgIc5k3syNffBHYLtrLVdy9EJQAACeDAgdAHoASgAKwADwHph3D3VZbiyAgC8iaSpMADm2wEABgA6InE/NIDXLQCXvLmQ/P9sDFUBgeQ3V1KjF4u7RyFeNQGaSEKdaPaZwOsqADe6e7V8ugwOZlAVBbil0uSoYQKxlQaoK6NGlFPS81IBa+qIHSD8xv6UBPhTPmcALCmDEg1w9e9P95gBMPnPLQUYdwB9BsAogIgeaLeEmm/ipyyjNV5kk2wlHruZK7yd/rZ8oIlekjkdKW21VajQoX5OQbD5rEJsUYIINh+23O90LCI74OLbOBrBCpCCYAeIRbAExCDYAs4iWAPOINgDAog2AASijRIiEOlNLH/yCUAAAhBAKH4d6lEJvw9suwAAAABJRU5ErkJggg==);
+}
+
+#logo{
+	background-size: contain;
+	background-image: url(https://ssl.gstatic.com/android/market_images/web/logo_m_play.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 40px;
+	margin-top: 5px;
+	width: 160px;
+}
+
+#wrapper-with-footer, .section, .section_header{
+	position:relative;
+}
+
+.section{
+	margin: 25px 0px 15px 0px;
+}
+
+.section_header{
+	display: inline-block;
+	width:100%;
+	line-height: 28px;
+	margin: 0;
+	min-width: 330px;
+	min-height: 37px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.section_title{
+	padding-left:5px;
+	display: inline-block;
+	font-size:24px;
+	font-weight: 100;
+}
+
+a.more_button{
+	position:absolute;
+	right: 7px;
+	bottom: 7px;
+	margin-top: 0;
+	display:inline-block;
+	background-color: #1aa1e1;
+	padding:0 13px;
+	border-radius:2px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	min-width: 40px;
+	text-decoration: none;
+	color:#fff;
+	line-height: 30px;
+	vertical-align:middle;
+	white-space: nowrap;
+}
+
+.book_cards{
+	height: 340px;
+	text-align: center;
+}
+
+.book_card{
+	position:relative;
+	display: inline-block;
+	width: 160px;
+	height: 330px;
+	margin: 5px;
+	vertical-align: top;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	background: #fff;
+	text-align: left;
+}
+
+.book_card>a{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.cover_container{
+	height: 245px;
+	line-height: 245px;
+	width: 160px;
+	border-radius: 2px 2px 0 0;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	position: relative;
+}
+
+.cover_container img{
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.details{
+	position:relative;
+	width:140px;
+	height:75px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	padding: 5px 10px 5px 10px;
+}
+
+.booktitle{
+	color: #333;
+	display:block;
+	font-size: 16px;
+	line-height: 17px;
+	max-height: 17px;
+	max-width: 140px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.paragraph_end{
+	position:absolute;
+	top:5px;
+	right:10px;
+	display:block;
+	width:60px;
+	height: 17px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+
+.author, .price{
+	font-size: 13px;
+	max-width: 132px;
+	max-height:16px;
+	overflow: hidden;
+	margin: 1px;
+}
+
+.author{
+	display: block;
+	color: rgb(170, 170, 170);
+}
+
+.price{
+	position: absolute;
+	text-align: right;
+	right:10px;
+	bottom:2px;
+	color: rgb(26, 161, 225);
+}
+
+.footer-links{
+	padding: 15px;
+}
+
+.copyright{
+	margin-right: 10px;
+}
+
+.ft-link{
+	color: #8d8d8d;
+	margin-left: 5px;
+}
+
+footer{
+	color: #555;
+	font-weight: 400;
+}

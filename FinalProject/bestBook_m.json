@@ -1,0 +1,35 @@
+[
+	{
+		"id" : "best#1",
+		"name" : "어서와 연애는 처음이지?",
+		"imgSrc" : "http://goo.gl/fPakTL",
+		"src" : "http://goo.gl/sdjKW9",
+		"author" : "장해정",
+		"price" : "₩980"
+	},
+	{
+		"id" : "best#2",
+		"name" : "젋은 베르테르의 슬픔",
+		"imgSrc" : "http://goo.gl/hwwz80",
+		"src" : "#",
+		"author" : "요한 볼프강 폰 괴테",
+		"price" : "₩1,500"
+	},
+	{
+		"id" : "best#3",
+		"name" : "어린왕자",
+		"imgSrc" : "http://goo.gl/pDXdVo",
+		"src" : "http://goo.gl/aSvgGF",
+		"author" : "앙투안 드 생텍쥐페리",
+		"price" : "₩1,000"
+	},
+	{
+		"id" : "best#4",
+		"name" : "아서왕과 원탁의 기사들",
+		"imgSrc" : "http://goo.gl/tfHw4e",
+		"src" : "http://goo.gl/65Im7q",
+		"author" : "토머스 불핀치",
+		"price" : "₩800"
+
+	}
+]

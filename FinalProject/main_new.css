@@ -6,6 +6,7 @@ ul{
 
 li{
 	display:inline-block;
+	padding: 0px;
 }
 
 a{
@@ -248,7 +249,7 @@ header{
 	background-color: #fff;
 	position: absolute;
 	width: 24px;
-	height:192px;
+	height:196px;
 }
 
 #top_nav{
@@ -257,7 +258,6 @@ header{
 	width:100%;
 	background-color: #fff;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-	overflow: auto;
 }
 
 #genre, #home, #ranking, #newbooks, #genre_container{
@@ -277,6 +277,58 @@ header{
 	background-color: #f1f1f1;
 	cursor: pointer;
 }
+
+#action-bar-dropdown-container{
+	margin: -44px 0 0 -40px;
+	padding: 40px 40px 40px 40px;
+	position: absolute;
+	overflow: hidden;
+	z-index: 110;
+	max-height: 572px;
+}
+
+#dropdown-submenu{
+	max-height: 210px;
+	width:200px;
+	left: -8px;
+	top: 0;
+	padding-top:6px;
+	position: relative;
+	box-shadow: 0 2px 40px rgba(0,0,0,0.4);
+	border-radius: 3px;
+	background: #fff;
+	border: 1px solid #d6d6d6;
+	overflow:scroll;
+}
+
+.submenu-item-wrapper li{
+	display: block;
+	width: 200px;
+	height: 30px;
+}
+
+.submenu-item-wrapper li:hover{
+	background-color: rgba(0, 0, 0, 0.04);
+}
+
+.leaf-submenu-link-wrapper{
+	height:30px;
+}
+
+.leaf-submenu-link{
+	display: block;
+	height:18px;
+	overflow: hidden;
+	padding: 6px 14px;
+	text-overflow: ellipsis;
+	text-align: left;
+	font-size: 13px;
+	font-weight: 400px;
+	vertical-align:middle;
+	line-height: 18px;
+}
+
+
 
 #separating_bar{
 	display: inline-block;
@@ -419,9 +471,10 @@ a.more_button:hover{
 	position:relative;
 	margin-left:255px;
 	margin-right: 50px;
+	overflow: auto;
 }
 
-.book_cards ul li, .cover_container{
+.book-card-list, .cover_container{
 	border-top-right-radius: 2px;
 	border-top-left-radius: 2px;
 }
@@ -439,17 +492,18 @@ a.more_button:hover{
 	background-color: rgba(51,51,51, 0.40);
 }
 
-.book_cards ul li{
+.book-card-list{
+	float: left;
 	width: 160px;
 	height: 330px;
-	margin: 5px 6px 5px 0px;
+	margin: 5px 9px 5px 0px;
 	background-color: rgb(255, 255, 255);
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px;
 }
 
-.book_cards ul li a{
+.book-card-list a{
 	width: 160px;
 	height: 245px;
 }
